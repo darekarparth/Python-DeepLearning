@@ -1,0 +1,49 @@
+Deep Learning Framework and APIs
+
+} TensorFlow is the core open source library to help you develop
+and train Deep Learning models – a development framework
+} Keras is an open-source deep learning library written in Python.
+} Scikit-learn is simple and efficient tools for developing data
+analytics built on NumPy, SciPy, and matplotlib
+
+
+Keras API
+TensorFlow is the deep learning library, while Keras offers a
+simple and powerful Python API for accessing TensorFlow.
+} TensorFlow 2 provides full Keras integration, making advanced
+machine learning easier and more convenient than ever
+before.
+} The API was “designed for human beings, not machines,” and
+“follows best practices for reducing cognitive load.”
+} The Model is the core Keras data structure. There are two
+main types of models available in Keras:
+} Sequential model,
+} Model class used with the functional API
+
+ API includes:
+} Neural layers
+} cost functions
+} optimizers
+} initialization schemes
+} activation functions and regularization schemes
+} all of which are all standalone modules that you can combine
+to create new models.
+} New modules are simple to add, as new classes and functions.
+} Models are defined in Python code, not separate model
+configuration files
+
+Scikit-Learn
+ Scikit-learn is an open source machine learning library that
+supports supervised and unsupervised learning.
+} It also provides various tools for model fitting (training),
+data preprocessing, model selection and evaluation, and
+many other utilities.
+} Here are some examples
+} Linear Models
+} Kernel ridge regression
+} Support Vector Machines
+} Stochastic Gradient Descent
+} Nearest Neighbors
+} Naive Bayes
+} Decision Trees
+} Neural networks

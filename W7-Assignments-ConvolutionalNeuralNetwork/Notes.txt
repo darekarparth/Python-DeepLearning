@@ -1,0 +1,131 @@
+🧠 Convolutional Neural Networks (CNNs)
+CNNs are deep learning models ideal for data with a grid-like structure (e.g., images).
+
+Images are composed of pixels arranged in grids, where each pixel value represents brightness and color.
+
+Each neuron in a CNN processes information from its receptive field, detecting simple to complex patterns.
+
+🧩 CNN Architecture Overview
+Convolutional Layer
+
+Pooling Layer
+
+Fully Connected Layer
+
+🔍 Convolutional Layer
+Performs dot product between input and kernel (a learnable matrix).
+
+Kernels slide over the input with a certain stride, forming an activation map.
+
+Output size:
+
+𝑊
+out
+=
+𝑊
+−
+𝐹
++
+2
+𝑃
+𝑆
++
+1
+W 
+out
+​
+ = 
+S
+W−F+2P
+​
+ +1
+Key concepts:
+
+Sparse interaction: kernel smaller than input.
+
+Parameter sharing: same weights reused.
+
+Equivariance: output changes consistently with input.
+
+🧮 Pooling Layer
+Reduces spatial size, computation, and overfitting.
+
+Types: Max, Average, L2 norm, Weighted average.
+
+Operates independently on each slice (depth).
+
+Output size:
+
+𝑊
+out
+=
+𝑊
+−
+𝐹
+𝑆
++
+1
+W 
+out
+​
+ = 
+S
+W−F
+​
+ +1
+Adds translation invariance to CNNs.
+
+⚙️ Stride and Padding
+Stride: Steps taken by kernel (e.g., 1, 2).
+
+Padding: Zeros added around the border of input.
+
+Same/Wide convolution: with padding.
+
+Valid/Narrow convolution: without padding.
+
+🔗 Fully Connected (FC) Layer
+Traditional Multi-layer Perceptron using Softmax at output.
+
+Every neuron in one layer connects to every neuron in the next.
+
+Uses high-level features from conv and pooling layers for classification.
+
+Softmax ensures output probabilities sum to 1.
+
+🧪 1D Convolution Example
+Input: [0, 0, 0, 1, 1, 0, 0, 0]
+
+Kernel: [0, 1, 0]
+
+Detects "bump" pattern in data.
+
+Implemented using Keras with:
+model.add(Conv1D(1, 3, input_shape=(8, 1)))
+
+🧬 Famous CNN Architectures
+🌀 LeNet-5
+Developed in 1994 by Yann LeCun.
+
+Features:
+
+Convolution → Pooling → Non-linearity (tanh/sigmoid)
+
+Sparse connections for efficiency
+
+Early example of CNN for image classification
+
+🧱 AlexNet (2012)
+By Alex Krizhevsky; won ImageNet.
+
+Deeper & wider than LeNet.
+
+Key contributions:
+
+ReLU activation
+
+Dropout to reduce overfitting
+
+Overlapping Max Pooling
+
+Used GPUs (GTX 580) for faster training
